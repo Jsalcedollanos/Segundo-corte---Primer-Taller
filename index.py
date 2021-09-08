@@ -53,3 +53,20 @@ if (azar <= 100):
     pagoTotal = (total - promo)
     print('Descuento del 20%: ',promo)    
     print('Total a pagar: ',pagoTotal)
+    
+# =============================================================================
+# Una compañía de seguros está abriendo un departamento de
+# finanzas y estableció un programa para captar clientes, que conssite
+# en lo siguiente: Si el monto por el que se efectúa la fianza es menor
+# que $50.000 la cuota a pagar será por el 3% del monto, y si el monto
+# es mayor que $50.000 la cuota a pagar será el 2% del monto. La
+# afianzadora desea determinar cual será la cuota que debe pagar al
+# cliente.
+# =============================================================================
+monto = int(input('Ingresa el monto: '))
+if (monto < 50000):
+    cuota = (monto * 0.03)
+    print('Couta a pagar del 3%: ',cuota)
+if (monto >= 50000):
+    cuota = (monto * 0.02)
+    print('Couta a pagar del 2%: ',cuota)
