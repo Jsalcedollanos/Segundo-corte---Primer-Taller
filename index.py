@@ -236,4 +236,20 @@ if (num1 > num2):
 else:
         suma = int(num1 + num2)
         print('Resultado: ',suma)
+        
+# =============================================================================
+# Leer tres números diferentes e imprimir el número mayor de los
+# tres.
+# =============================================================================
+num1 = int(input('Ingrese numero 1: '))
+num2 = int(input('Ingrese numero 2: '))
+num3 = int(input('Ingrese numero 3: '))
 
+if (num1 > num2 and num1 > num3):
+    print('Numero mayor es: ',num1)
+    
+if (num2 > num1 and num2 > num3):
+    print('Numero mayor es: ',num2)
+
+if (num3 > num1 and num3 > num2):
+    print('Numero mayor es: ',num3)
