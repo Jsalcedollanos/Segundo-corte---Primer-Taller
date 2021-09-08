@@ -93,3 +93,24 @@ if (promedio > 170):
     print('Total de la multa del 50% es: ',multa)
 if (promedio <= 170):  
     print('EXCELENTE!! no tiene multa ni sancion')
+
+# =============================================================================
+# Una persona se encuentra con un problema de comprar un automóvil
+# o un terreno, los cuales cuestan exactamente lo mismo. Sabe que
+# mientras el automóvil se devalúa, con el terreno sucede lo contrario.
+# Esta persona comprará el automóvil si al cabo de tres años la
+# devaluación de este no es mayor que la mitad 
+# del incremento del valor del terreno. Ayúdale a esta pesona a determinar 
+# si debe o no comprar el automóvil.
+# =============================================================================
+valor = int(input('Ingrese valor del auto: '))
+desva = int(valor / 36)
+valori = int(valor * 0.3)
+mitad = int(valori / 2) 
+print('Valor de la valoricacion: ',valori)
+print('Valor de la desvaloricacion: ',desva)
+print('Mitad de la valoricacion',mitad)
+if (desva <= mitad):
+    print('Compra carro!')
+else:
+    print('No compres carro!')
