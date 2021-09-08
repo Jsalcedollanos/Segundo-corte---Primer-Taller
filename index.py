@@ -220,3 +220,20 @@ if (monto <= 500000):
     print('Valor invertido: ',inver)
     print('Valor del credito: ',credito)
     print('valor de intereses: ',interes)
+    
+# =============================================================================
+# Leer 2 números; si son iguales que lo multiplique, si el primero es
+# mayor que el segundo que los reste y sino que los sume.
+# =============================================================================
+num1 = int(input('Ingrese numero 1: '))
+num2 = int(input('Ingrese numero 2: '))
+if (num1 == num2):
+    multiplicacion = int(num1 * num2)
+    print('Resultado: ',multiplicacion)
+if (num1 > num2):
+    resta = int(num1 - num2)
+    print('Resultado: ',resta)
+else:
+        suma = int(num1 + num2)
+        print('Resultado: ',suma)
+
