@@ -33,3 +33,23 @@ else:
     print('Descuento del 10% es: ',des)
     print('El total a pagar es: ',total)
     
+# =============================================================================
+# En un supermercado se hace una promoción, mediante la cual el
+# cliente obtiene un descuento dependiendo de un número que se
+# escoge al azar. Si el número escogido es menor que 74 el descuento
+# es del 15% sobre el total de la compra, si es mayor o igual a descuento es 
+# del 20%. Obtener cuanto dinero se le descuenta
+# =============================================================================
+azar = int(input('Escoja un numero del 1 al 100: '))
+total = int(input('Valor de la compra: '))
+if (azar < 74):
+    promo = int(total * 0.15)
+    pagoTotal = (total - promo)
+    print('Descuento del 15%: ',promo)    
+    print('Total a pagar: ',pagoTotal)
+
+if (azar <= 100):
+    promo = int(total * 0.2)
+    pagoTotal = (total - promo)
+    print('Descuento del 20%: ',promo)    
+    print('Total a pagar: ',pagoTotal)
