@@ -138,3 +138,51 @@ if (cantidad >= 10):
     desc = int(valor * 0.4)
     valorTotal = int(valor - desc)
     print('Total a pagar con descuento del 40% es: ',valorTotal)
+
+# =============================================================================
+# Un proveedor de estéreos ofrece un descuento del 10% sobre el
+# precio sin IVA, de algún aparato si este cuesta $2000 o más. Además,
+# independientemente de esto, ofrece un 5% de descuento si la marca
+# es NOSY. Determinar cuanto pagará, con IVA incluido, un cliente
+# cualquiera por la compra de su aparato. IVA es del 16%.
+# =============================================================================
+valor = int(input('Ingrese valor del producto: '))
+marca = str(input('la marca es NOSY (si) (no)'))
+
+if (valor >= 2000 and marca == 'si'):
+    bono = int(valor * 0.05)
+    desc = int(valor * 0.1)
+    iva = int(valor * 0.16)
+    descuentoTotal = int(bono + desc)
+    pagoTotal = int(valor + iva - descuentoTotal)
+    print('recibe descuento del 5% y es de: ',bono)
+    print('Recibes un descuento del 10% y es de: ',desc)
+    print('Iva: ',iva)
+    print('Total a pagar es: ',pagoTotal)
+
+if (valor >= 2000 and marca == 'no'):
+    desc = int(valor * 0.1)
+    iva = int(valor * 0.16)
+    pagoTotal = int(valor + iva - desc)
+    print('Recibes un descuento del 10% y es de: ',desc)
+    print('Iva: ',iva)
+    print('Total a pagar es: ',pagoTotal)
+    
+if (valor < 2000 and marca == 'si'):
+    bono = int(valor * 0.05)
+    desc = int(valor * 0.1)
+    iva = int(valor * 0.16)
+    descuentoTotal = int(bono + desc)
+    pagoTotal = int(valor + iva - descuentoTotal)
+    print('recibe descuento del 5% y es de: ',bono)
+    print('Recibes un descuento del 10% y es de: ',desc)
+    print('Iva: ',iva)
+    print('Total a pagar es: ',pagoTotal)
+    
+if (valor < 2000 and marca == 'no'):
+    desc = int(valor * 0.1)
+    iva = int(valor * 0.16)
+    pagoTotal = int(valor + iva - desc)
+    print('Recibes un descuento del 10% y es de: ',desc)
+    print('Iva: ',iva)
+    print('Total a pagar es: ',pagoTotal)
