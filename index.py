@@ -147,7 +147,7 @@ if (cantidad >= 10):
 # cualquiera por la compra de su aparato. IVA es del 16%.
 # =============================================================================
 valor = int(input('Ingrese valor del producto: '))
-marca = str(input('la marca es NOSY (si) (no)'))
+marca = str(input('la marca es NOSY (si) (no): '))
 
 if (valor >= 2000 and marca == 'si'):
     bono = int(valor * 0.05)
@@ -186,3 +186,37 @@ if (valor < 2000 and marca == 'no'):
     print('Recibes un descuento del 10% y es de: ',desc)
     print('Iva: ',iva)
     print('Total a pagar es: ',pagoTotal)
+    
+# =============================================================================
+# Una empresa quiere hacer una compra de varias piezas de la misma
+# clase a una fábrica de refacciones. La empresa, dependiendo del
+# monto total de la compra, decidirá que hacer para pagar al fabricante.
+# Si el monto total de la compra excede de $500.000 la empresa tendrá
+# la capacidad de invertir de su propio dinero un 55% del monto de la
+# compra, pedir prestado al banco un 30% y el resto lo pagará
+# solicitando un crédito al fabricante. Si el monto total de la compra no
+# excede de $500.00 la empresa tendrá capacidad de invertir de su
+# propio dinero un 70% y el restante 30% lo pagará solicitando crédito
+# al fabricante. El fabricante cobra por concepto de interes un 20%
+# sobre la cantidad que se le pague a crédito. Obtener la cantidad a
+# inverir, valor del préstamo, valor del crédito y los intereses.
+# =============================================================================
+monto = int(input('Monto total: '))
+if (monto > 500000):
+    inver = int(monto * 0.55)
+    prestamo = int(monto * 0.3)
+    credito = int(monto * 0.15)
+    interes = (credito * 0.2)
+    total = int(prestamo + inver + credito)
+    print('Valor invertido: ',inver)
+    print('Valor del prestamo: ',prestamo)
+    print('Valor del credito: ',credito)
+    print('valor de intereses: ',interes)
+    
+if (monto <= 500000):
+    inver = int(monto * 0.7)
+    credito = int(monto * 0.3)
+    interes = (credito * 0.2)
+    print('Valor invertido: ',inver)
+    print('Valor del credito: ',credito)
+    print('valor de intereses: ',interes)
