@@ -114,3 +114,27 @@ if (desva <= mitad):
     print('Compra carro!')
 else:
     print('No compres carro!')
+    
+# =============================================================================
+# En una fábrica de computadoras se planea ofrecer a los clientes un
+# descuento que dependerá del número de computadoreas que
+# compre. Si las computadoras son menos de cinco se les dará un 10%
+# de descuento sobre el total de la compra; si el número de
+# computadoras es mayor o igual a cinco pero menos de diez se le
+# otorga un 20% de descuento; y si son 10 o más se les da un 40%. El
+# precio de cada computadora es de $11.000.
+# =============================================================================
+cantidad = int(input('Ingrese la cantidad de computadores: '))
+valor = int(input('Ingrese el valor a pagar: '))
+if (cantidad < 5):
+    desc = int(valor * 0.1)
+    valorTotal = int(valor - desc)
+    print('Total a pagar con descuento del 10% es: ',valorTotal)
+if (cantidad >= 5 and cantidad < 10):
+    desc = int(valor * 0.2)
+    valorTotal = int(valor - desc)
+    print('Total a pagar con descuento del 20% es: ',valorTotal)
+if (cantidad >= 10):
+    desc = int(valor * 0.4)
+    valorTotal = int(valor - desc)
+    print('Total a pagar con descuento del 40% es: ',valorTotal)
